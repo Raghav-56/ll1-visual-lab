@@ -1,6 +1,6 @@
 # LL(1) visual lab
 
-Compare the same production choice through the three verbal rules, FIRST/FOLLOW disjointness, predictive-table cells, and a parser decision diagram. Edit a grammar, animate a parser trace, inspect factoring and recursion repairs, and use counterexamples to separate LL(1) from unambiguity.
+Compare the same production choice through the three verbal rules, FIRST/FOLLOW disjointness, predictive-table cells, and a parser decision diagram. Place SELECT entries into the table, move input tokens through the parser, and inspect factoring and recursion rewrites. The counterexamples distinguish LL(1) from unambiguity.
 
 [Open the website](https://raghav-56.github.io/ll1-visual-lab/).
 
@@ -32,7 +32,7 @@ npx playwright test
 
 On Windows, the browser checks use Google Chrome when it is installed at its standard system path. Otherwise, Playwright uses its installed Chromium. Set `LL1_BROWSER_PATH` to use another executable. Set `LL1_TEST_URL` to the deployed URL, including its trailing slash, to check that site instead of the local server.
 
-Screenshots appear in `artifacts/`. Browser results and dependencies are excluded from Git.
+Screenshots and recordings of table construction appear in `artifacts/`. Browser results, recordings, and dependencies are excluded from Git.
 
 ## Enter a grammar
 
@@ -50,6 +50,8 @@ The lab requires every nonterminal to be reachable and productive before returni
 ## Read the examples
 
 The site includes 13 grammars, three repair stories, a diagram of the implications, two full ambiguity trees, and three practice questions. The course exam grammar is included with input `1 0 1 0`.
+
+Open **Build the table step by step** to place each production in its SELECT columns. A second production entering an occupied cell creates a visible conflict. Use **Next** in the parser to see tokens matched and nonterminals replaced. In the rewrites, symbols move to their new positions and repeated prefixes merge. Each animation supports manual steps and reduced motion.
 
 `S -> A a; A -> a | ε` is the central counterexample. It is unambiguous, has no left recursion, and is already left factored. Its `A/a` cell still has two productions. The engine tests check this conflict independently of the UI.
 

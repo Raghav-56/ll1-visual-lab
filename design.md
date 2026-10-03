@@ -21,7 +21,7 @@ Epsilon is an empty right-hand side internally and appears in textbook FIRST set
 
 Both candidates scored 23/25 in the independent judge's review. The judge favored the story's staged teaching. The chosen base is the connected workbench because the user's four requested perspectives benefit from comparing the same decision directly. Its controls and shared witnesses make that comparison executable. Grafts from the story are an explicit guided route, a counterexample gallery, and two authored ambiguity trees. Scroll-driven automatic scene changes were rejected because they can interrupt inspection of a decision and complicate keyboard and mobile behavior.
 
-The resulting layout has a grammar rail, a responsive four-view area, and full-width sections for the parser, animated repairs, relationships, and practice. Every animation has manual steps and a text account. Reduced motion uses discrete states.
+The resulting layout has a grammar rail, a responsive four-view area, and full-width sections for the parser, animated repairs, relationships, and practice. Table construction is a separate, expandable view so its partial table does not replace the completed table used by the four tests. Productions travel into cells, matched input tokens move toward the stack, and rewrite symbols move between their old and new positions. Every animation has manual steps and a text account. Reduced motion uses discrete states.
 
 ## Tradeoffs
 
@@ -31,4 +31,4 @@ The resulting layout has a grammar rail, a responsive four-view area, and full-w
 
 ## Validation
 
-Node tests compare computed FIRST, FOLLOW, selected cells, conflict causes, cycle witnesses, and successful/error/conflict traces against literal expected values. Browser checks exercise changing examples, selecting cells, stepping and replaying, editing a grammar, repair frames, questions, and narrow layouts. Publishing is complete only after the public URL loads and its controls work.
+Node tests compare computed FIRST, FOLLOW, selected cells, conflict causes, cycle witnesses, and successful/error/conflict traces against literal expected values. Browser checks exercise changing examples, selecting cells, stepping and replaying, editing a grammar, repair frames, questions, and narrow layouts. Motion checks cover cell collisions, consumption after a token arrives, interrupted steps, grammar changes, and reduced motion. Publishing is complete only after the public URL loads and its controls work.
