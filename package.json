@@ -1,0 +1,15 @@
+{
+  "name": "ll1-visual-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Interactive LL(1) grammar rules, sets, parsing tables, parser traces, and counterexamples.",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test grammar.test.mjs",
+    "test:browser": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}
