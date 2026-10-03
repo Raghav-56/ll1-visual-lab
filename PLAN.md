@@ -5,7 +5,7 @@
 - [x] Agree: synthesize a design and continue within the requested scope.
 - [x] Implement: build the grammar analyzer, four connected views, parser animation, repairs, relationship map, and practice.
 - [x] Verify: check literal FIRST/FOLLOW/table results and parser behavior, then inspect desktop and mobile layouts.
-- [ ] Publish: push a public repository, configure GitHub Pages, and verify the live site.
+- [x] Publish: push a public repository, configure GitHub Pages, and verify the live site.
 - [x] Scrap review: remove abandoned prototypes and unnecessary layers before delivery.
 
 ## Design rubric
@@ -17,3 +17,8 @@ Score each candidate from 1 to 5 for correctness, visibility of the equivalence 
 Existing tools inspected: ComVis, JSMachines LL(1) Parser Generator, Montana State Webworks, and OpenDSA LL parsing.
 Primary references: Princeton COS320 predictive parsing, Calgary CPSC411 grammar transformations, and Lund EDAN65 parsing lecture.
 The website will link to these references. Its illustrations and code will be original.
+
+## Verified result
+
+Published on 2026-10-03 at https://raghav-56.github.io/ll1-visual-lab/.
+The 13 engine checks and 16 desktop/mobile browser checks passed locally and in GitHub Actions. All 16 browser checks also passed against the public Pages URL. Screenshots cover the desktop and mobile layouts. Pages returned HTTP 200 with the correct page title.
